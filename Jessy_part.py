@@ -6,6 +6,7 @@ cn = ("\033[90m" + chr(9608) + "\033[0m") + ("\033[90m" + chr(9608) + "\033[0m")
 pn = ('\033[48;5;0m' + chr(9922))
 dn = ('\033[48;5;244m' + chr(9923))
 
+# test de commit pour voir si ça marche
 
 r_item_blanc = [cb, pb, db]
 r_item_noir = [cn, pn, dn]
