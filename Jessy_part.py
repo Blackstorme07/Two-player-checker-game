@@ -55,9 +55,7 @@ grille_test= [
 p = Plateau
 print(p.affiche(grille_test))
 
-
-def case_est_vide(case):
-    return case == cn
+saucisse = 'sauciseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 
 
 
