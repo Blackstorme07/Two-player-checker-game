@@ -1,12 +1,11 @@
 cb = (chr(9608)) + (chr(9608))
-pb = ('\033[48;5;0m' + chr(9920))
-db = ('\033[48;5;243m' + chr(9921)) 
+pb = ('\033[48;5;0m' + chr(9922)) 
+db = ('\033[48;5;0m' + chr(9921)) 
         
 cn = ("\033[90m" + chr(9608) + "\033[0m") + ("\033[90m" + chr(9608) + "\033[0m")
-pn = ('\033[48;5;0m' + chr(9922))
-dn = ('\033[48;5;244m' + chr(9923))
+pn = ('\033[48;5;0m' + chr(9920))
+dn = ('\033[48;5;0m' + chr(9923))
 
-# test de commit pour voir si ça marche
 
 r_item_blanc = [cb, pb, db]
 r_item_noir = [cn, pn, dn]
@@ -55,14 +54,3 @@ grille_test= [
 ]
 p = Plateau
 print(p.affiche(grille_test))
-
-
-        
-        
-
-
-
-
-        
-
-
