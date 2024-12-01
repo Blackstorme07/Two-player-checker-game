@@ -13,7 +13,7 @@ r_item_noir = [cn, pn, dn]
 class Plateau:
     def __init__(self, grille):
         self.grille = grille
-        
+
     def affiche(grille):
         for i in range(len(grille)):
             for j in range(len(grille)):
@@ -55,6 +55,9 @@ grille_test= [
 p = Plateau
 print(p.affiche(grille_test))
 
-saucissssssssssssssssse = 'saucisssssssssssse'
+
+def case_est_vide(case):
+    return case == cn
+
 
 
