@@ -54,3 +54,7 @@ grille_test= [
 ]
 p = Plateau
 print(p.affiche(grille_test))
+
+saucissssssssssssssssse = 'saucisssssssssssse'
+
+
