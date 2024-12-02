@@ -10,6 +10,7 @@ dn = ('\033[48;5;244m' + chr(9923))
 r_item_blanc = [cb, pb, db]
 r_item_noir = [cn, pn, dn]
 
+
 class Plateau:
     def __init__(self, grille):
         self.grille = grille
@@ -27,19 +28,7 @@ class Plateau:
                     print(r_item_blanc[grille[i][j]-1], end=space)
                 else:
                     print(r_item_noir[-(grille[i][j])-1], end=space)
-       
-# grille_test = [
-# [2, 1, 2, 1, 2, 1, 2, 1, 2, 1], 
-# [1, 2, 1, 2, 1, 2, 1, 2, 1, 2], 
-# [2, 1, 2, 1, 2, 1, 2, 1, 2, 1], 
-# [1, 2, 1, 2, 1, 2, 1, 2, 1, 2], 
-# [-1, 1, -1, 1, -1, 1, -1, 1, -1, 1], 
-# [1, -1, 1, -1, 1, -1, 1, -1, 1, -1], 
-# [-2, 1, -2, 1, -2, 1, -2, 1, -2, 1], 
-# [1, -2, 1, -2, 1, -2, 1, -2, 1, -2], 
-# [-2, 1, -2, 1, -2, 1, -2, 1, -2, 1], 
-# [1, -2, 1, -2, 1, -2, 1, -2, 1, -2]
-# ]
+
 show_grid = [
     [ 1, -2,  1, -2,  1, -2,  1, -2,  1, -2],
     [-2,  1, -2,  1, -2,  1, -2,  1, -2,  1],
@@ -55,6 +44,11 @@ show_grid = [
 p = Plateau
 print(p.affiche(show_grid))
 
+def est_mangeable(pion, pion_adverse):
+    """fonction qui prend en parametre un pion et un pion adverse :
+    - verifie si la case derriere le pion adverse est vide
+    - verifie si le pion est en, contact du pion adverse"""
+    
 
 
 
