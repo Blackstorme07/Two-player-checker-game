@@ -13,10 +13,7 @@ r_item_noir = [cn, pn, dn]
 class Plateau:
     def __init__(self, grille):
         self.grille = grille
-    
-    def case_est_vide(self,case):
-        return case == cn
-    
+        
     def affiche(grille):
         for i in range(len(grille)):
             for j in range(len(grille)):
@@ -43,7 +40,7 @@ class Plateau:
 # [-2, 1, -2, 1, -2, 1, -2, 1, -2, 1], 
 # [1, -2, 1, -2, 1, -2, 1, -2, 1, -2]
 # ]
-grille_test= [
+show_grid = [
     [ 1, -2,  1, -2,  1, -2,  1, -2,  1, -2],
     [-2,  1, -2,  1, -2,  1, -2,  1, -2,  1],
     [ 1, -2,  1, -2,  1, -2,  1, -2,  1, -2],
@@ -56,5 +53,8 @@ grille_test= [
     [ 2,  1,  2,  1,  2,  1,  2,  1,  2,  1]
 ]
 p = Plateau
-print(p.affiche(grille_test), pn, pb)
+print(p.affiche(show_grid))
+
+
+
 
