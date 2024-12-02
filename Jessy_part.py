@@ -1,14 +1,15 @@
 cb = (chr(9608)) + (chr(9608))
-pb = ('\033[48;5;0m' + chr(9920))
+pb = ('\033[48;5;0m' + chr(9922)) 
 db = ('\033[48;5;0m' + chr(9921)) 
         
 cn = ("\033[90m" + chr(9608) + "\033[0m") + ("\033[90m" + chr(9608) + "\033[0m")
-pn = ('\033[48;5;0m' + chr(9922))
+pn = ('\033[48;5;0m' + chr(9920))
 dn = ('\033[48;5;0m' + chr(9923))
 
 
 r_item_blanc = [cb, pb, db]
 r_item_noir = [cn, pn, dn]
+
 
 class Plateau:
     def __init__(self, grille, case):
@@ -19,6 +20,7 @@ class Plateau:
         return case == cn 
 
     def affiche(grille):
+        print('\033c')
         for i in range(len(grille)):
             for j in range(len(grille)):
                 if j == 9:
