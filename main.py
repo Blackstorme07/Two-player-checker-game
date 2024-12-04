@@ -25,20 +25,40 @@ assert grille_init == grille_test, "problème dans la grille init"
 
 def deplacement(grid, x, y, direction, lenght):
     
-    left_value = grid[x-lenght][y-lenght]
-    right_value = grid[x-lenght][y+lenght]
-    if left_value == -1:
-        if direction == 'g':
+    
+    if move_checking == True, 'g':
             grid[x-lenght][y-lenght] = grid[x][y]
             grid[x][y] = -1
-    if right_value == -1:
-        if direction == 'd':
+    if move_checking == True, 'd'
             grid[x-lenght][y+lenght] = grid[x][y]
             grid[x][y] = -1
                 
     else:
         print("déplacement impossible")
 
+
+def move_checking(grid, x, y, direction, distance):
+    left_value = grid[x-distance][y-distance]
+    right_value = grid[x-distance][y+distance]
+    if distance == 1:
+        if left_value == -1:
+            return True, 'g'
+        if right_value == -1:
+            return True , 'd'
+        
+def eating(grid, x, y, direction, distance):
+    ate = []
+    left_value = grid[x-distance][y-distance]
+    right_value = grid[x-distance][y+distance]
+    if distance == 2:
+        if direction == 'g':
+            if left_value == abs(2):
+                ate.append([x-distance, y-distance])
+        if direction == 'd':
+            if right_value == abs(2):
+                ate.append([x-distance, y+distance])
+             
+        
 
 # Tests de déplacements
 p.affiche(grille_init)
