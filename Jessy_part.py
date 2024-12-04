@@ -53,6 +53,6 @@ show_grid = [
     [ 2,  1,  2,  1,  2,  1,  2,  1,  2,  1]
 ]
 p = Plateau
-print(p.affiche(show_grid))
+# print(p.affiche(show_grid))
 
 
